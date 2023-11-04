@@ -1,0 +1,23 @@
+<html>
+
+<body bgcolor=#a3cfb4>
+
+    <center>
+        <p>
+            {% for place_name in place_names %}
+
+        <p>
+            <td>
+                <a href="https://en.wikipedia.org/wiki/{{ place_name.token }}">{{ place_name.canonical_name }}</a>
+            </td>
+        </p>
+
+        {% endfor %}
+        </p>
+
+
+    </center>
+
+</body>
+
+</html>
